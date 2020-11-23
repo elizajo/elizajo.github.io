@@ -1,0 +1,669 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ .home {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 4fr .5fr;
+ }
+ 
+ .roster {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: .5fr .5fr 2fr .5fr;
+    width: 100vw;
+ }
+ 
+ header {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-between;
+    grid-column: 1/4;
+    padding-left: 0cm;
+ }
+ 
+ .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 65vw;
+    margin: 1%;
+    font-family: 'Raleway', sans-serif;
+ }
+ 
+ .ESWS:hover {
+    cursor: pointer;
+ }
+ .fas {
+    color: black;
+    display: flex;
+    align-self: center;
+ }
+ 
+ .fa-spin-hover:hover {
+    animation: spin 2500ms infinite linear;
+ }
+ 
+ @keyframes spin {
+    0% {
+       transform: rotate(360deg);
+    }
+ }
+ 
+ .ESWS {
+    display: flex;
+    padding: 2%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.75em;
+ }
+ 
+ .ESWS a:visited {
+    text-decoration: white;
+    color: black;
+ }
+ 
+ .topnav {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    padding: 2%;
+    color: white;
+    font-family: 'Noto Serif', serif;
+ }
+ 
+ .topnav li {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-color: #eb2727;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding: 20px;
+    width: 11vw;
+    border-radius: 1em;
+ }
+ 
+ .topnav li:hover {
+    background-color: black;
+    cursor: pointer;
+ }
+ 
+ .topnav li:active a {
+    color: #eb2727;
+ }
+ 
+ .topnav a:visited {
+    text-decoration: #eb2727;
+    color: white;
+ }
+ 
+ .topnav li:hover a {
+    text-decoration: black;
+ }
+ 
+ 
+ h2 {
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 5%;
+ }
+ 
+ .scale {
+    margin: 0 auto;
+    width: 80%;
+    height: 30%;
+    
+    }
+ 
+ .scale img {
+    width: 100%;
+    height: 100%;
+ }
+ 
+ .scale img:hover {
+    box-shadow: 15px 15px 20px gray;
+    cursor: pointer;
+ }
+ 
+ .gone {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+ }
+ 
+ #quote {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #eb2727;
+    box-shadow: 15px 15px black;
+    height: 65vh;
+    width: 50vw;
+    margin: 2%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 5vw;
+    padding:3%;
+    text-align: center;
+ }
+ 
+ footer {
+    display: flex;
+    background-color: #eb2727;
+    grid-column: 1/4;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ 
+ .social {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    justify-content: space-evenly;
+    width: 20vw;
+ }
+ 
+ #twitter {
+    background-color: white;
+    width: fit-content;
+    align-self: center;
+    padding: .5em;
+    margin-left: 1%;
+    border-radius: 50%;
+    color: #eb2727;
+ }
+ 
+ #instagram {
+    margin-left: 1%;
+    width: fit-content;
+    align-self: center;
+    color: white;
+ }
+ 
+ #twitter:hover {
+    cursor: pointer;
+ }
+ 
+ #twitter:active {
+    background-color: #c4c4c4;
+ }
+ 
+ #twitter a:visited {
+    text-decoration: none;
+    color: #eb2727;
+ }
+ 
+ #instagram:hover {
+    cursor: pointer;
+ }
+ 
+ .fa-instagram:active {
+    color: #c4c4c4;
+ }
+ 
+ #instagram a:visited {
+    text-decoration: none;
+    color: white;
+ }
+ 
+ .address {
+    text-align: right;
+    padding: 1%;
+    align-self: center;
+    color: white;
+    font-family: 'Noto Serif', serif;
+ }
+ 
+ 
+ h4 {
+    letter-spacing: 2px;
+    text-decoration: underline;
+ }
+ 
+ h4:hover {
+    cursor: pointer;
+ }
+ 
+ h4:active {
+    color: #c4c4c4;
+ }
+ 
+ .address a:visited {
+    color: white;
+    text-decoration: none;
+ }
+ 
+ .address a:hover {
+    color: white;
+ }
+ 
+ /*beginning of roster css*/
+ 
+ 
+ .roster a {
+    text-decoration: none;
+ }
+ 
+ .subtitle {
+    display: flex;
+    background-color: #eb2727;
+    color: white;
+    margin-bottom: 0em;
+    font-family: 'Raleway', sans-serif;
+    line-height: 2em;
+    height: 10vh;
+    width: 80vw;
+    margin-left: 2em;
+    padding: 1%;
+    padding-left: 1em;
+    text-align: left;
+    align-items: center;
+ }
+ 
+ .listofnames {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 1/2;
+    height: 85vh;
+    width: 70vw;
+    margin-left: 4em;
+    margin-top: -3%;
+ }
+ .listofnames a {
+     color: black;
+ }
+ 
+ .listofnames a:hover {
+    color: #eb2727;
+    cursor: pointer;
+ }
+ 
+ .coaches {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: #c4c4c4;
+    box-shadow: 15px 15px black;
+    margin-right:0;
+    margin-left:-16vw;
+    margin-bottom: 3em;
+    margin-top: -3%;
+    height: 80vh;
+    width: 29vw;
+ }
+ .coaches a {
+     color: black;
+ }
+ 
+ .coaches a:hover {
+    color: #eb2727;
+ }
+ 
+ .hcpic {
+    height: 25vh;
+    width: 8vw;
+    grid-row: 1/3;
+    margin-top: -30%;
+    margin-left: .5em;
+    margin-right: .25em;
+ }
+ 
+ .hpic img {
+    height: 100%;
+    width: 100%;
+ }
+ 
+ #coachstaff {
+    grid-column: 1/3;
+    font-size: 2em;
+    width: 75%;
+    margin-left: 10%;
+    height: fit-content;
+    margin-bottom: -8em;
+ }
+ 
+ #hctitle {
+    font-size: 1.25em;
+    text-align: left;
+    height: 7vh;
+    width: fit-content;
+    padding-left: 1%;
+    margin-top: -1em;
+ }
+ 
+ #headcoachinfo {
+    font-family: 'noto serif', serif;
+    grid-column: 2/3;
+    margin-top: -7.5em;
+    height: fit-content;
+    width: 15vw;
+    font-size: 2vh;
+    margin-left: .25%;
+ }
+ 
+ .atitle {
+    font-size: 1em;
+    text-align: left;
+    padding-bottom: 1%;
+    margin-right: 3em;
+    width: fit-content;
+ }
+ 
+ .headcoach {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    width: fit-content;
+    font-family: 'noto serif', serif;
+ }
+ 
+ .assistantcoach {
+    grid-column: 1/2;
+    font-family: 'Noto serif', serif;
+    margin-left: 1em;
+    font-size: 2vh;
+ }
+ 
+ .nnpg {
+    font-size: 1em;
+    width: 7.5em;
+    border-style: solid;
+    border-top: 2px;
+    border-left: none;
+    border-right: none;
+    font-family: 'Noto serif', serif;
+ }
+ 
+ .theteam {
+    font-size: .75em;
+    width: 10em;
+    line-height: 1.9em;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Noto Serif', serif;
+ }
+ 
+ .lefting {
+    text-align: left;
+ }
+/*beignning of about CSS*/
+
+.about {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: .5fr .5fr 2fr .25fr 1.5fr .5fr;
+   margin: 0 auto;
+   width: 100vw;
+}
+.history {
+   grid-row: 3/4;
+   margin-left: 5em;
+   margin-top: 2em;
+   height: 40vh;
+}
+#beginning {
+   text-align: left;
+   padding-bottom: 1%;
+   margin-left: 22vw;
+   margin-right: 22vw;
+}
+#aboutcontent {
+   position: absolute;
+   margin-left: 22vw;
+   margin-right: 15vw;
+   font-family: 'noto serif', serif;
+   font-size: .8em;
+}
+#aboutpic {
+   width: 20vw;
+   height: 20vw;
+   float: left;
+   box-shadow: -15px 15px black;
+}
+#facttitle {
+   height: fit-content;
+   font-family: 'Raleway', sans-serif;
+   font-size: 2.5em;
+   text-align: center;
+   margin-top: 1em;
+   grid-row: 4/5;
+}
+.facts {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   grid-row: 5/6;
+}
+#location {
+   display: flex;
+   flex-direction: column;
+   font-family: 'Noto Serif', serif;
+   text-align: center;
+   width: 25vw;
+   padding: 2%;
+}
+#number {
+   display: flex;
+   flex-direction: column;
+   font-family: 'Noto Serif', serif;
+   text-align: center;
+   width: 25vw;
+   padding: 2%;
+}
+#college {
+   display: flex;
+   flex-direction: column;
+   font-family: 'Noto Serif', serif;
+   text-align: center;
+   width: 25vw;
+   padding: 2%;
+}
+#awards {
+   display: flex;
+   flex-direction: column;
+   font-family: 'Noto Serif', serif;
+   text-align: center;
+   width: 25vw;
+   padding: 2%;
+}
+.fa-red {
+   color: #eb2727;
+}
+ .slicknav_menu {
+     display: none;
+ }
+ 
+ @media only screen and (max-width:832px) {
+
+     .slicknav_menu {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         background-color: white;
+         grid-row: 1/2;
+         grid-column: 1/3;
+     }
+     .slicknav_menu, .slicknav_menutxt {
+         font-family: 'Raleway', sans-serif;
+     }
+     .roster .slicknav_menu {
+        margin-bottom: 9em;
+         padding-left: 5vh;
+         padding-right: 5vh;
+     }
+     .topnav {
+         display: none;
+     }
+     li {
+         background-color:black;
+         font-family: 'noto serif' , serif;
+     }
+    li:hover {
+        background-color: #eb2727;
+     }
+     li a:hover {
+         background-color: #eb2727 !important;
+         color: white !important;
+     }
+     li:active {
+         background-color: #c4c4c4 !important;
+     }
+     li a:active {
+         background-color: #c4c4c4!important;
+     }
+    .home {
+       display: flex;
+       flex-direction: column;
+    }
+    .roster {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: .25fr .33fr 1fr 1fr .5fr;
+       width: 100vw;
+    }
+
+    .rosterhead {
+        grid-row: 1/2;
+        margin-right: 7em;
+        margin-top: 7em;
+    }
+
+    .subtitle {
+       grid-column: 1/3;
+       grid-row: 2/3;
+    }
+ 
+    .listofnames {
+       grid-column: 1/3;
+       grid-row: 3/4;
+       margin: 0 auto;
+       margin-left: 4em;
+       width: 80vw;
+       margin-top: -5.5em;
+    }
+    .footer {
+        grid-column: 1/3;
+    }
+    .nnpg {
+        width: 5em;
+    }
+    .theteam {
+    font-size: .7em;
+    width: 6.5em;
+    text-align: center;
+    }
+
+    .lefting {
+    width: fit-content;
+    font-size: .65em;
+    }
+    .coaches {
+       grid-column: 1/3;
+       grid-row: 4/5;
+       margin: 0 auto;
+       height: 65vh;
+       width:80vw;
+       margin-top: 1.5em;
+    }
+    #coachstaff {
+        margin-bottom: 1.45em;
+    }
+    .hcpic {
+        margin-left: 1em;
+        width: 7em;
+        height: 11em;
+    }
+    #hctitle {
+        margin-top: -2.75em;
+    }
+    #headcoachinfo {
+        width: fit-content;
+        padding-top: 2em;
+        font-size: unset;
+    }
+    .assistantcoach {
+        margin-top: -1em;
+        padding: 1em;
+    }
+    .ESWS {
+       font-size: 2em;
+       font-family: 'Raleway', sans-serif;
+    }
+ 
+    .title {
+       margin-left: 3%;
+    }
+ 
+    .gone {
+       display: none;
+    }
+ 
+    #quote {
+       height: fit-content;
+       width: 70vw;
+       font-size: 6vh;
+       padding: 2%;
+       margin:0 auto;
+       margin-top: 4%;
+       margin-bottom: 4%;
+    }
+ 
+    .scale {
+       width: 90%;
+    }
+ 
+    .social {
+       margin-left: 1em;
+    }
+    .about {
+       display: flex;
+       flex-direction: column; 
+    }
+    .about .slicknav_menu {
+       padding-left:5vh;
+       padding-right: 5vh;
+    }
+    .history {
+       flex-direction: column;
+       height: 50vh;
+       margin-bottom: 25vh;
+    }
+    #aboutpic {
+       float: none;
+       margin: 0 auto;
+       height: 35vh;
+       width: 35vh;
+      }
+    #beginning {
+       margin: 0 auto;
+       margin-top: 1vh;
+    }
+    #aboutcontent {
+      margin: 0 auto;
+      margin-right: 5em;
+    }
+    #facttitle {
+       margin-top: 15vh;
+    }
+    .facts {
+       flex-direction: column;
+   }
+   #location {
+      width: 50vw;
+   }
+   #number {
+      width: 50vw;
+   }
+   #college {
+      width: 50vw;
+   }
+   #awards {
+     width: 50vw;
+   }
+ }
